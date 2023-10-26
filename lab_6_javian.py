@@ -3,7 +3,11 @@ def decoder(number):
 
 
 def encoder(number):
-   pass
+    str_number = str(number)
+    new_number = ""
+    for i in str_number:
+        new_number += str(int(i) + 3)
+    return new_number
 
 
 def main():
